@@ -13,6 +13,18 @@
   --dark-grey: #202020;
 }
 
+.header-title {
+  display: inline-block;
+}
 .navbar {
+  /* flex properties */
   display: flex;
+  display: inline-block;
+}
+
+.nav-item {
+}
+
+#profile-pic {
+  max-width: 200px;
 }
