@@ -6,6 +6,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --mustard: #f6bd60ff;
+  --pale-purple: #eaddec;
+  --lavender: #cfb8ff;
+  --dark-grey: #202020;
+}
+
 .navbar {
   display: flex;
 }
