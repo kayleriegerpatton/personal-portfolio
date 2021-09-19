@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -42,17 +42,19 @@
 
 /* about me section styling */
 .about-me-flex {
-  padding: 20px;
+  padding: 40px;
   /* flex properties */
   display: inline-flex;
   max-width: 750px;
 }
 
-.about-item {
+.about-item h2,
+p {
+  padding-left: 40px;
+  padding-bottom: 20px;
 }
 
 #profile-pic {
   max-width: 200px;
   border-radius: 100px;
-  padding-right: 20px;
 }
