@@ -3,23 +3,25 @@
   margin: 0;
   padding: 0;
   border: 1px solid black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 :root {
   --mustard: #f6bd60ff;
   --pale-purple: #eaddec;
   --lavender: #cfb8ff;
+  --grape: #531b93;
   --dark-grey: #202020;
 }
 
 .header-title {
   display: inline-block;
+  font-family: "raleway", sans-serif;
 }
 .navbar {
   /* flex properties */
-  display: flex;
-  display: inline-block;
+  display: inline-flex;
 }
 
 .nav-item {
@@ -27,4 +29,5 @@
 
 #profile-pic {
   max-width: 200px;
+  border-radius: 100px;
 }
