@@ -5,10 +5,11 @@
   border: 1px solid black;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
 }
 
 :root {
-  --mustard: #f6bd60ff;
+  --mustard: #f6bd60;
   --pale-purple: #eaddec;
   --lavender: #cfb8ff;
   --grape: #531b93;
@@ -18,19 +19,26 @@
 /* header and navbar styling */
 .header {
   background-color: var(--lavender);
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-title {
-  display: inline-block;
+  text-align: center;
   font-family: "raleway", sans-serif;
   font-size: 3.7rem;
   padding: 20px;
 }
-.navbar {
+
+.nav-links-container {
   /* flex properties */
-  display: inline-flex;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: auto 0;
 }
 
+/* nav links styling */
 .nav-item a {
   font-family: "raleway", sans-serif;
   color: black;
@@ -41,20 +49,20 @@
 }
 
 section h2 {
+  color: black;
   font-size: 2.2rem;
 }
 
 /* about me section styling */
-.about-me-flex {
+.about-me-section {
   padding: 40px;
   max-width: 750px;
   /* flex properties */
   display: inline-flex;
 }
 
-/* can I make this stop targeting the project name and description? */
 .about-item h2,
-p {
+.about-item p {
   padding-left: 40px;
   padding-bottom: 20px;
 }
@@ -64,18 +72,26 @@ p {
   border-radius: 100px;
 }
 
+/* projects section styling */
 .projects-section {
-  padding-bottom: 20px;
   padding-left: 40px;
+  padding-bottom: 20px;
 }
 
-.project-card {
+.cards-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.large-project-card {
+  width: 100%;
 }
 
 #project1-img {
   max-width: 100%;
 }
 
+/* contact section styling */
 .contact-section {
   padding-left: 40px;
   padding-bottom: 20px;
