@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-decoration: none;
@@ -17,17 +17,12 @@
 }
 
 /* header and navbar styling */
-.header {
-  background-color: var(--lavender);
-  display: flex;
-  justify-content: space-between;
-}
 
 .header-title {
   text-align: center;
   font-family: "raleway", sans-serif;
   font-size: 3.7rem;
-  padding: 20px;
+  padding: 50px; 0px; 20px; 0px;
 }
 
 .nav-links-container {
@@ -48,28 +43,25 @@
   padding: 10px 20px;
 }
 
+#profile-pic {
+  position: relative;
+  left: 30px;
+  bottom: 150px;
+  max-width: 230px;
+  border-radius: 130px;
+}
+
 section h2 {
   color: black;
   font-size: 2.2rem;
+  padding-bottom: 20px;
 }
 
 /* about me section styling */
 .about-me-section {
   padding: 40px;
-  max-width: 750px;
-  /* flex properties */
-  display: inline-flex;
-}
-
-.about-item h2,
-.about-item p {
-  padding-left: 40px;
   padding-bottom: 20px;
-}
-
-#profile-pic {
-  max-width: 200px;
-  border-radius: 100px;
+  max-width: 750px;
 }
 
 /* projects section styling */
@@ -90,18 +82,18 @@ section h2 {
 }
 
 .large-project-card {
-  padding: 20px;
+  margin: 20px;
 }
 
 .small-project-card {
   /* When I add width: 33% they no longer flex. Is there a way to make each card fill up the row better while maintaining the flex?*/
-  padding-left: 20px;
-  padding-bottom: 20px;
+  margin: 20px 10px;
 }
 
 .small-project-card img,
 .large-project-card img {
   width: 100%;
+  object-fit: contain;
 }
 
 /* contact section styling */
