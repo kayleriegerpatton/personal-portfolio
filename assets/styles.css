@@ -39,7 +39,7 @@
 }
 
 /* nav links styling */
-.nav-item a {
+.nav-link a {
   font-family: "raleway", sans-serif;
   color: black;
   font-size: 1.5rem;
@@ -76,19 +76,28 @@ section h2 {
 .projects-section {
   padding-left: 40px;
   padding-bottom: 20px;
-}
-
-.cards-container {
+  /* flex  properties */
   display: flex;
   flex-direction: column;
 }
 
-.large-project-card {
-  width: 100%;
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#project1-img {
-  max-width: 100%;
+.large-project-card {
+}
+
+.small-project-card {
+  padding: 20px;
+  width: 33%;
+}
+
+.small-project-card img {
+  width: 100%;
 }
 
 /* contact section styling */
