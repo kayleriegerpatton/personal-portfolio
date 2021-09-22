@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-decoration: none;
@@ -109,8 +109,7 @@ section h2 {
 
 /* contact section styling */
 .contact-section {
-  padding-left: 40px;
-  padding-bottom: 20px;
+  padding: 20px 40px;
   /* background-color: var(--lavender); */
 }
 
@@ -129,4 +128,51 @@ section h2 {
 
 .contact-item:hover {
   color: var(--grape);
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+/* Mobile screen styling */
+@media screen and (max-width: 480px) {
+  .nav-links-container {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    /* flex properties */
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .nav-link {
+    text-align: center;
+    margin: 10px;
+  }
+
+  #profile-pic {
+    left: 130px;
+    bottom: 0px;
+    margin: 5px;
+  }
+
+  .contact-section h2,
+  .projects-section h2,
+  .about-me-section h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .contact-links {
+    margin: auto;
+    width: 100%;
+    /* flex properties */
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .contact-item {
+    text-align: center;
+  }
 }
