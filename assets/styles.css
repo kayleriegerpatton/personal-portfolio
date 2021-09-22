@@ -17,12 +17,11 @@
 }
 
 /* header and navbar styling */
-
 .header-title {
   text-align: center;
   font-family: "raleway", sans-serif;
   font-size: 3.7rem;
-  padding: 50px; 0px; 20px; 0px;
+  padding: 50px 0px 20px 0px;
 }
 
 .nav-links-container {
@@ -43,6 +42,10 @@
   padding: 10px 20px;
 }
 
+.nav-link a:hover {
+  color: var(--grape);
+}
+
 #profile-pic {
   position: relative;
   left: 30px;
@@ -59,9 +62,12 @@ section h2 {
 
 /* about me section styling */
 .about-me-section {
-  padding: 40px;
-  padding-bottom: 20px;
+  padding: 20px 40px;
   max-width: 750px;
+}
+
+.about-item p {
+  margin-bottom: 20px;
 }
 
 /* projects section styling */
@@ -78,7 +84,7 @@ section h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .large-project-card {
@@ -87,13 +93,18 @@ section h2 {
 
 .small-project-card {
   /* When I add width: 33% they no longer flex. Is there a way to make each card fill up the row better while maintaining the flex?*/
-  margin: 20px 10px;
+  margin-top: 20px;
 }
 
 .small-project-card img,
 .large-project-card img {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+}
+
+.small-project-card h3:hover,
+.large-project-card h3:hover {
+  color: var(--grape);
 }
 
 /* contact section styling */
@@ -114,4 +125,8 @@ section h2 {
   font-weight: 700;
   text-decoration: none;
   padding: 10px 20px;
+}
+
+.contact-item:hover {
+  color: var(--grape);
 }
