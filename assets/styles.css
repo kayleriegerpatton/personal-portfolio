@@ -95,14 +95,19 @@ section h2 {
 
 .small-project-card img {
   width: 300px;
+  filter: grayscale(100%);
+}
+
+.small-project-card img:hover {
+  filter: grayscale(0%);
 }
 
 .large-project-card img {
   width: 100%;
 }
 
-.small-project-card h3:hover,
-.large-project-card h3:hover {
+.small-project-card:hover,
+.large-project-card:hover {
   color: var(--grape);
 }
 
