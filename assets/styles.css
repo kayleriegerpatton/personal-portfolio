@@ -48,12 +48,6 @@
   color: var(--grape);
 }
 
-#profile-pic-box {
-  /* position: relative;
-  left: 30px;
-  bottom: 150px; */
-}
-
 #profile-pic {
   display: block;
   max-width: 230px;
@@ -101,7 +95,6 @@ section h2 {
 }
 
 .small-project-card {
-  /* When I add width: 33% they no longer flex. Is there a way to make each card fill up the row better while maintaining the flex?*/
   margin: 40px 0px;
 }
 
@@ -119,7 +112,6 @@ section h2 {
 /* contact section styling */
 .contact-section {
   padding: 20px 40px;
-  /* background-color: var(--lavender); */
 }
 
 .contact-links {
@@ -141,12 +133,30 @@ section h2 {
 
 /* Laptop screen styling */
 @media screen and (max-width: 1024px) {
+  #profile-pic {
+    position: relative;
+    bottom: 15px;
+    margin-left: 40px;
+  }
+
+  .nav-links-container {
+    padding-bottom: 0px;
+  }
 }
 
 /* Tablet screen styling */
 @media screen and (max-width: 768px) {
   .nav-links-container {
     justify-content: center;
+  }
+  #profile-pic-box {
+    padding-top: 40px;
+  }
+
+  #profile-pic {
+    position: relative;
+    bottom: 0px;
+    margin: auto;
   }
 }
 
