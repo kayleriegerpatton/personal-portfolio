@@ -80,17 +80,11 @@ section h2 {
 }
 
 .cards-container {
-  /* test out margins */
-
   /* flex properties */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-}
-
-.large-project-card {
-  /* margin: 20px; */
 }
 
 .small-project-card {
@@ -99,10 +93,12 @@ section h2 {
   padding: 0px 10px;
 }
 
-.small-project-card img,
+.small-project-card img {
+  width: 300px;
+}
+
 .large-project-card img {
   width: 100%;
-  height: 100%;
 }
 
 .small-project-card h3:hover,
