@@ -6,6 +6,7 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-decoration: none;
+  font-size: 18px;
 }
 
 :root {
@@ -30,6 +31,7 @@
   justify-content: flex-end;
   flex-wrap: wrap;
   margin: auto 0;
+  padding-bottom: 40px;
 }
 
 /* nav links styling */
@@ -46,12 +48,17 @@
   color: var(--grape);
 }
 
-#profile-pic {
-  position: relative;
+#profile-pic-box {
+  /* position: relative;
   left: 30px;
-  bottom: 150px;
+  bottom: 150px; */
+}
+
+#profile-pic {
+  display: block;
   max-width: 230px;
   border-radius: 130px;
+  margin: auto;
 }
 
 section h2 {
@@ -80,11 +87,13 @@ section h2 {
 
 .cards-container {
   padding: 20px;
+  /* test out margins */
+
   /* flex properties */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .large-project-card {
@@ -93,7 +102,7 @@ section h2 {
 
 .small-project-card {
   /* When I add width: 33% they no longer flex. Is there a way to make each card fill up the row better while maintaining the flex?*/
-  margin-top: 20px;
+  margin: 40px 0px;
 }
 
 .small-project-card img,
@@ -130,10 +139,15 @@ section h2 {
   color: var(--grape);
 }
 
+/* Laptop screen styling */
 @media screen and (max-width: 1024px) {
 }
 
+/* Tablet screen styling */
 @media screen and (max-width: 768px) {
+  .nav-links-container {
+    justify-content: center;
+  }
 }
 
 /* Mobile screen styling */
@@ -150,12 +164,6 @@ section h2 {
   .nav-link {
     text-align: center;
     margin: 10px;
-  }
-
-  #profile-pic {
-    left: 130px;
-    bottom: 0px;
-    margin: 5px;
   }
 
   .contact-section h2,
