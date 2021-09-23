@@ -21,11 +21,11 @@ Project success criteria required:
 
 ## Screenshots
 
-Mobile viewport:
-![](images/mobile-viewport-screenshot.png)
+Laptop viewport (full page):
+![](./assets/images/screenshots/laptop-viewport-screenshot.png)
 
-Tablet viewport:
+Tablet viewport (partial):
+![](./assets/images/screenshots/tablet-viewport-screenshot.png)
 
-Laptop viewport:
-
-Large screen viewport:
+Mobile viewport (header, nav, photo):
+![](./assets/images/screenshots/mobile-viewport-screenshot.png)
