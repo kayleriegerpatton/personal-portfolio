@@ -14,6 +14,8 @@ Project success criteria required:
 
 ## Link to Deployed Application
 
+[GitHub Pages Link](https://kayleriegerpatton.github.io/personal-portfolio/)
+
 ## Built With
 
 - HTML
@@ -21,11 +23,14 @@ Project success criteria required:
 
 ## Screenshots
 
-Laptop viewport (full page):
+### Laptop viewport (full page):
+
 ![](./assets/images/screenshots/laptop-viewport-screenshot.png)
 
-Tablet viewport (partial):
+### Tablet viewport (partial):
+
 ![](./assets/images/screenshots/tablet-viewport-screenshot.png)
 
-Mobile viewport (header, nav, photo):
+### Mobile viewport (header, nav, photo):
+
 ![](./assets/images/screenshots/mobile-viewport-screenshot.png)
