@@ -80,22 +80,23 @@ section h2 {
 }
 
 .cards-container {
-  padding: 20px;
   /* test out margins */
 
   /* flex properties */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .large-project-card {
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .small-project-card {
   margin: 40px 0px;
+  flex-grow: 1;
+  padding: 0px 10px;
 }
 
 .small-project-card img,
@@ -131,8 +132,21 @@ section h2 {
   color: var(--grape);
 }
 
+/* Large screen styling */
+@media screen and (min-width: 1240px) {
+  #profile-pic {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+  }
+
+  #about-me {
+    padding-top: 50px;
+  }
+}
+
 /* Laptop screen styling */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1239px) {
   #profile-pic {
     position: relative;
     bottom: 15px;
