@@ -9,7 +9,7 @@ Project success criteria required:
 - About Me, Projects, and Contact sections with relevant content
 - Name and photo
 - Nav bar linking to page sections
-- Titled project cards with images and linked to their deployed applications
+- Titled project cards with images that link to their deployed applications
 - Styling which is responsive to various viewport sizes
 
 ## Link to Deployed Application
@@ -22,7 +22,10 @@ Project success criteria required:
 ## Screenshots
 
 Mobile viewport:
+![](images/mobile-viewport-screenshot.png)
 
 Tablet viewport:
 
 Laptop viewport:
+
+Large screen viewport:
