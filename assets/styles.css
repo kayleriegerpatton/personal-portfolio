@@ -93,12 +93,13 @@ section h2 {
   padding: 0px 10px;
 }
 
-.small-project-card img {
+.card img {
   width: 300px;
   filter: grayscale(100%);
+  margin: auto;
 }
 
-.small-project-card img:hover {
+.card img:hover {
   filter: grayscale(0%);
 }
 
@@ -113,6 +114,12 @@ section h2 {
   padding: 20px 40px;
 }
 
+.contact-icon {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  color: var(--grape);
+}
+
 .contact-links {
   display: inline-flex;
 }
@@ -123,7 +130,7 @@ section h2 {
   font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 0px 25px 0px 5px;
 }
 
 .contact-item:hover {
