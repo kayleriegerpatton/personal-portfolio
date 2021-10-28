@@ -71,45 +71,39 @@ section h2 {
   margin-bottom: 20px;
 }
 
-/* projects section styling */
+/* PROJECTS SECTION*/
 .projects-section {
   padding: 20px 40px;
-  /* flex  properties */
   display: flex;
   flex-direction: column;
 }
 
 .cards-container {
-  /* flex properties */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-.small-project-card {
-  margin: 40px 0px;
-  flex-grow: 1;
-  padding: 0px 10px;
+.card:first-child {
+  width: 100%;
 }
 
-.card img {
-  width: 300px;
+.card:not(:first-child) {
+  flex: 1;
+  margin: 40px 10px;
+  height: 100%;
+}
+
+/* .card img {
   filter: grayscale(100%);
-  margin: auto;
 }
 
 .card img:hover {
   filter: grayscale(0%);
-}
+} */
 
-.large-project-card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* contact section styling */
+/* CONTACT SECTION */
 .contact-section {
   padding: 20px 40px;
 }
