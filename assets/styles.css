@@ -1,3 +1,11 @@
+:root {
+  --mustard: #f6bd60;
+  --pale-purple: #eaddec;
+  --lavender: #cfb8ff;
+  --grape: #531b93;
+  --dark-grey: #202020;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,15 +17,7 @@
   font-size: 18px;
 }
 
-:root {
-  --mustard: #f6bd60;
-  --pale-purple: #eaddec;
-  --lavender: #cfb8ff;
-  --grape: #531b93;
-  --dark-grey: #202020;
-}
-
-/* header and navbar styling */
+/* NAVBAR */
 .header-title {
   text-align: center;
   font-family: "raleway", sans-serif;
@@ -26,7 +26,6 @@
 }
 
 .nav-links-container {
-  /* flex properties */
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -34,7 +33,6 @@
   padding-bottom: 40px;
 }
 
-/* nav links styling */
 .nav-link a {
   font-family: "raleway", sans-serif;
   color: black;
@@ -55,13 +53,17 @@
   margin: auto;
 }
 
+body {
+  padding: 0px 100px;
+}
+
 section h2 {
   color: black;
   font-size: 2.2rem;
   padding-bottom: 20px;
 }
 
-/* about me section styling */
+/* ABOUT ME SECTION */
 .about-me-section {
   padding: 20px 40px;
   /* max-width: 750px; */
@@ -90,9 +92,12 @@ section h2 {
 }
 
 .card:not(:first-child) {
-  flex: 1;
-  margin: 40px 10px;
+  width: 18rem;
+  margin: 40px 10px 0px;
   height: 100%;
+}
+
+.card:last-child {
 }
 
 /* .card img {
@@ -102,6 +107,10 @@ section h2 {
 .card img:hover {
   filter: grayscale(0%);
 } */
+
+.card-subtitle {
+  font-size: 0.9rem;
+}
 
 /* CONTACT SECTION */
 .contact-section {
