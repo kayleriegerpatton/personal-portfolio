@@ -89,7 +89,7 @@ section h2 {
 }
 
 .card:first-child {
-  width: 100%;
+  width: 75%;
 }
 
 .card:not(:first-child) {
